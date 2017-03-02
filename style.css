@@ -13,72 +13,71 @@ form {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	justify-content: space-around;
 	color: white;
 	font-family: arial, verdana, sans-serif;
 	font-weight: bold;
 	font-size: 18px;
 	padding-top: 20px;
 	padding-left: 40px;
-
+	
+	
 }
 
 label{
 	padding-top: 10px;
 	margin-top: 10px;
-
 }
 
 input {
-	height: 50px;
-	width: 400px;
+	height: 40px;
+	width: 300px;
 	margin: 10px 0px;
 	border: 2px solid white;
 	background: rgb(92, 163, 214);
+	
+}
+
+input, select, textarea{
+	color: white;
 	font-family: arial, verdana, sans-serif;
 	font-weight: bold;
 	font-size: 18px;
 }
 
 input:active, select:active{
-	outline: 4px solid rgb(42, 106, 152);
-	border: none;
+	border: 4px solid rgb(42, 106, 152);
+	outline-style: none;
+
 }
 
 input:hover, select:hover {
-	outline: 4px solid rgb(42, 106, 152);
-	border:none;
+	border: 4px solid rgb(42, 106, 152);
+	outline-style: none;
 }
 
 ::-webkit-input-placeholder{
-	font-family: arial, verdana, sans-serif;
-	font-weight: bold;
-	font-size: 18px;
 	color:rgb(42, 106, 152);
 }
 
 select{
-	height: 50px;
-	width: 400px;
+	height: 40px;
+	width: 300px;
 	margin: 10px 0px;
-	color:white;
 	outline-color: rgb(42, 106, 152);
 	background: rgb(92, 163, 214);
-	font-family: arial, verdana, sans-serif;
-	font-weight: bold;
-	font-size: 18px;
+	
 }
-
-
 
  #biography, #affiliations, #comments {
 	margin-top: 10px; 
-	height: 200px;
-	width: 400px;
+	height: 100px;
+	width: 300px;
 
 }
 
 .firstcolumn, .secondcolumn, .thirdcolumn{
-	flex: 1 0 auto;
+	flex: 1 0 33%;
 	padding: 0px;
 }
 	
